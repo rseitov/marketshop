@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GeekShop - Каталог</title>
+    <title>{{ title|title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/static/css/products.css" rel="stylesheet">
+    <link href="{% static 'css/products.css' %}" rel="stylesheet">
 
 </head>
 
